@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayor o menor</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+  <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/edad.js"></script>
+</head>
+<body>
+  <style>
+    #imagen{
+      border: 1px ;
+      width: 300px;
+      height: 400px;
+      margin-top: 30px;
+    }
+    #imagen img{
+      width: 300px;
+      max-height:300px ;
+    }
+  </style>
+  <div class="container">
+    <div class="portada">
+      <div class="hoja1">
+        <div class="hoja2">
+          <div class="hoja3">
+            <div class="hoja4">
+              <div class="row col-12 libro">
+                <div class="izquierda col-6 formulario">
+                  <form class="row g-3 needs-validation" novalidate method="#" onsubmit="return calcularedad()">
+                    <h3 style="margin-left: 65px;">Formulario</h3>
+                    <div class="col-md-8">
+                        <label for="validationServer01" class="form-label">Edad de primera persona</label>
+                        <input type="date" min="0" step="1" class="form-control is-valid" id="textofecha1" value="0" required>
+                        <div class="valid-feedback">
+                        </div>
+                      </div>
+                    
+                      <div class="col-md-8">
+                        <label for="validationServer01" class="form-label">Edad de segunda persona</label>
+                        <input type="date" min="0" step="1" class="form-control is-valid" id="textofecha2" value="0" required>
+                        <div class="valid-feedback">
+                        </div>
+                      </div>
+
+                      <div class="col-md-8">
+                        <label for="validationServer01" class="form-label">Edad de tercera persona</label>
+                        <input type="date" min="0" step="1" class="form-control is-valid" id="textofecha3" value="0" required>
+                        <div class="valid-feedback">
+                        </div>
+                      </div>
+                      
+        
+                    <div class="col-12">
+                      <button class="btn btn-primary col-8" type="submit">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="derecha col-5  respuesta" align="center">
+                  <div class="col-12">
+                    <h3> Respuesta </h3>         
+                 </div>
+                 <div id="resultado"></div>
+                 <div id="imagen"></div>
+             </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
